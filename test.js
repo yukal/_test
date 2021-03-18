@@ -1,7 +1,7 @@
 function findLucky(items) {
   const hashmap = {};
   let luckyMatches = 0;
-  let luckyNumber = 0;
+  let luckyNumber;
 
   items.forEach((number) => {
     if (!hashmap.hasOwnProperty(number)) {
@@ -18,7 +18,7 @@ function findLucky(items) {
     }
   });
 
-  return luckyNumber !== 0 ? luckyNumber : false;
+  return luckyNumber ?? false;
 }
 
 const cases = [
