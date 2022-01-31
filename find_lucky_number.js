@@ -1,4 +1,9 @@
-function findLucky(items) {
+/**
+ * Searchin the number that occurs the most
+ * @param {Array} items An array with numbers
+ * @returns number|bool
+ */
+function findLuckyNumber(items) {
   const hashmap = {};
   let luckyMatches = 0;
   let luckyNumber;
@@ -29,6 +34,6 @@ const cases = [
 ];
 
 cases.forEach((items) => {
-  const luckyNumber = findLucky(items);
+  const luckyNumber = findLuckyNumber(items);
   console.log(luckyNumber);
 });
