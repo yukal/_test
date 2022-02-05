@@ -1,0 +1,21 @@
+{
+  "name": "btrx-express-webserver",
+  "version": "1.0.0",
+  "description": "Express webserver using Bitrix API",
+  "author": "Yukal Alexander <yukal.alexander@gmail.com>",
+  "license": "MIT",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "nodemailer": "^6.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
